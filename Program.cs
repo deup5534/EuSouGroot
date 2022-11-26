@@ -1,10 +1,25 @@
-﻿//do
-{
-    Console.WriteLine("--- <3Groot Chatbot<3 ---");
-Console.WriteLine("Pressione uma tecla para continuar ou 0 para sair...");
-Console.ReadKey();
-Console.Clear();
-Console.WriteLine("Converse com o Groot!");
+﻿
+    Console.WriteLine("--- Groot Chatbot ---");
+    Console.WriteLine("\nConverse com Groot!");
+    Console.WriteLine();
 
-Console.ReadLine();
+    Console.ForegroundColor = ConsoleColor.DarkRed;
+    Console.WriteLine("Pressione uma tecla para continuar...");
+    Console.ReadKey();
+    Console.Clear();
+    Console.ResetColor();
+string conversa ="";
+
+while (conversa != "Tchau" )
+{
+    Console.Write(">");
+    Console.ReadLine();
+    RespostaDoGroot();
+}
+
+void RespostaDoGroot()
+{
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("\nEu sou Groot.");
+    Console.ResetColor();
 }
